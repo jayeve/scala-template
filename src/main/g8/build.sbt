@@ -6,7 +6,8 @@ scalaVersion := "2.12.8"
 
 lazy val commonDeps = Seq(
   scalaTest % Test,
-  pureConfig
+  pureConfig,
+  playJson
 )
 
 lazy val root = (project in file("."))
