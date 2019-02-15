@@ -1,8 +1,22 @@
-// give the user a nice default project!
-ThisBuild / organization := "com.example"
-ThisBuild / scalaVersion := "2.12.8"
+import Dependencies._
 
-lazy val root = (project in file(".")).
-  settings(
-    name := "scala-template"
+// give the user a nice default project!
+organization := "io.purplepenguin"
+scalaVersion := "2.12.8"
+
+lazy val commonDeps = Seq(
+  scalaTest % Test,
+  pureConfig
+)
+
+lazy val root = (project in file("."))
+  .settings(name := "root")
+  .aggregate(
+    purplepenguin
+  )
+
+lazy val purplepenguin = (project in file("purple-penguin"))
+  .settings(
+    name := "purple-penguin",
+    libraryDependencies ++= commonDeps
   )
