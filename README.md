@@ -1,8 +1,8 @@
-A [Giter8][g8] template for ...!
+A [Giter8][g8] template for vanilla Scala project
 
 Template license
 ----------------
-Written in <YEAR> by <AUTHOR NAME> <AUTHOR E-MAIL ADDRESS>
+Written in 2019 by jayeve
 [other author/contributor lines as appropriate]
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
